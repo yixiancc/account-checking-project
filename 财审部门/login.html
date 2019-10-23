@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>财审部门登录</title>
+</head>
+<body style="background-color: #3587B0">
+<div class="row" style="margin-top: 8%;width:100%;">
+    <div class="col-4"></div>
+    <div class="col-4 row">
+        <div class="col-1"></div>
+        <div class="col-1">
+            <i class="fa fa-globe fa-4x" style="color: white;margin-left: 140%" aria-hidden="true"></i>
+        </div>
+        <div class="col-10 text-style text-center" style="color: white;font-size: 32px;font-weight: 700;">福州市信易＋对账系统
+            <div class="text-style text-center" style="font-weight: 400;font-size: 15px;color: white">智能监管 安全可控 数据上链
+                一键溯源 一键溯源
+            </div>
+        </div>
+        <div class="col-12 card" style="background-color: white;border-radius: 6px;margin-top: 5%;margin-left: 1%">
+            <div class="card-body row">
+                <div class="card-title col-12 text-center text-style" style="font-size: 18px;font-weight:600">登录</div>
+                <div class="col-2" style="margin-top: 6%"></div>
+                <div class="col-2" style="margin-top: 6%">用户名</div>
+                <div class="col-6" style="margin-top: 5%">
+                    <input type="text" id="username" autocomplete="off"
+                           class="form-control input-shadow" placeholder="请输入用户名"
+                           onkeyup="value=value.replace(/[^\w\.\/]/ig,'')">
+                </div>
+                <div class="col-2" style="margin-top: 6%"></div>
+
+                <div class="col-2" style="margin-top: 6%"></div>
+                <div class="col-2" style="margin-top: 6%">密码</div>
+                <div class="col-6" style="margin-top: 5%">
+                    <input type="password" id="password" autocomplete="off"
+                           class="form-control input-shadow" placeholder="请输入密码"
+                           οnkeyup="this.value=this.value.replace(/[^\w_]/g,'');">
+                </div>
+                <div class="col-2" style="margin-top: 6%"></div>
+
+                <div class="col-2" style="margin-top: 6%"></div>
+                <div class="col-2" style="margin-top: 6%"></div>
+                <div class="col-6" style="margin-top: 5%">
+                    <button id="login" type="submit"
+                            class="btn btn-primary shadow-primary btn-block waves-effect waves-light"
+                            style="background-color: #3587B0">登录
+                    </button>
+                </div>
+                <div class="col-2" style="margin-top: 6%"></div>
+
+                <div class="col-12"><br></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="col-4"></div>
+</div>
+
+<script src="plugins/jquery.min.js"></script>
+<script src="plugins/bootstrap.min.js"></script>
+<script src="plugins/alerts-boxes/js/sweet-alert-script.js"></script>
+<script src="plugins/alerts-boxes/js/sweetalert.min.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>
